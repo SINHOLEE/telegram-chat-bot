@@ -1,0 +1,84 @@
+telegram 챗봇 만들기
+
+1. teltegram.desktop에서 다운로드 받는다.
+2. 가입한다.
+3. BotFather(체크)를 클릭하여 시작버튼을 누른다.
+4. BotFather에서 챗봇을 만들 수 있다.
+
+5. /newbot이라고 BotFather에 입력하자
+5. 응답) BotFather, [12.07.19 10:23]
+Alright, a new bot. How are we going to call it? Please choose a name for your bot.
+
+6. 이 신호, [12.07.19 10:24]
+sin_ho_bot 이라고 입력했다.
+6. 응답) BotFather, [12.07.19 10:24]
+Good. Now let's choose a username for your bot. It must end in `bot`. Like this, for example: TetrisBot or tetris_bot.
+
+7. Use this token to access the HTTP API: 		# 이 API를 통제할 수 있는 일종의 비밀번호 / 잘 관리 해야한다.
+중요! API 토큰
+882597047:AAEHMMIz7BvYG8g1KynRxtC_s3T3HkZEFR0
+
+8. Making requests
+All queries to the Telegram Bot API must be served over HTTPS and need to be presented in this form: 
+
+https://api.telegram.org/bot<token>/METHOD_NAME. 
+
+Like this for example:
+
+<token> : 내 토큰
+METHOD_NAME : 내가 설정한? 할? 명령의 이름
+
+9. 명령을 생성해보자
+https://api.telegram.org/bot882597047:AAEHMMIz7BvYG8g1KynRxtC_s3T3HkZEFR0/getMe
+
+10. 새탭에 위 주소를 복사 붙여넣으면 json형식의 html 정보가 들어온다.
+{
+  "ok": true,
+  "result": {
+    "id": 882597047,
+    "is_bot": true,
+    "first_name": "sin_ho_bot",
+    "username": "sinho_bot"
+  }
+}
+
+11. 텔레그램에 들어가서 유저네임을 검색해보자. 있다. 말걸어보자. 묵묵부답.ㅠ
+
+12. 이제 내 봇에게 누가 말걸었는지 확인해보자
+getUpdates
+Use this method to receive incoming updates using long polling (wiki). 모든 업데이트(메시지)를 받는다.
+ An Array of Update objects is returned. 어레이 형식으로
+
+13.
+https://api.telegram.org/bot882597047:AAEHMMIz7BvYG8g1KynRxtC_s3T3HkZEFR0/getUpdates
+
+14. 
+"chat": {
+          "id": 816539893,
+          "first_name": "신호",
+          "last_name": "이",
+내 봇에 말 건사람의 챗_아이디를 알 수 있다.
+ 
+15. API에 Required 에 yes가 체크되어있는 정보는 꼭 입력해야 한다.
+
+16. 예시
+https://api.telegram.org/bot882597047:AAEHMMIz7BvYG8g1KynRxtC_s3T3HkZEFR0/
+sendMessage?text=검색어&chat_id=816539893
+로 명령하면 미리 저장해논 내용을 검색어어와 매칭된다면 챗아이디에게 메시지를 보낼 수 있다.
+
+
+telegram app.py에 #25 이후 연결
+
+17.
+
+https://api.telegram.org/bot882597047:AAEHMMIz7BvYG8g1KynRxtC_s3T3HkZEFR0
+여기에서 webhook세팅을 하자
+
+https://api.telegram.org/bot882597047:AAEHMMIz7BvYG8g1KynRxtC_s3T3HkZEFR0/setWebhook?url=https://63204db7.ngrok.io/882597047:AAEHMMIz7BvYG8g1KynRxtC_s3T3HkZEFR0
+주소는 #16~17해서 받은 값
+
+https://api.telegram.org/bot882597047:AAEHMMIz7BvYG8g1KynRxtC_s3T3HkZEFR0/
+setWebhook -> API 이름
+?
+url=https://63204db7.ngrok.io/ -> #16~17해서 받은 값
+882597047:AAEHMMIz7BvYG8g1KynRxtC_s3T3HkZEFR0 -> 내 토큰
