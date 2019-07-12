@@ -6,7 +6,10 @@ import requests #34 sendMeassge를 실행하기 위해 필요한 모듈 /  reque
 
 app = Flask(__name__)
 
+# 상수변수
 API_TOKEN = config('API_TOKEN') #22 환경변수에서 받아와라
+NAVER_CLIENT_ID = config('NAVER_CLIENT_ID')
+NAVER_CLIENT_SECRET = config('NAVER_CLIENT_SECRET')
 
 @app.route('/')
 def hello():
@@ -44,15 +47,51 @@ def telegram() :
         print('chat_id : ', chat_id)
         print('text : ', text)
         
-        if text == '짜장면' :
-            text = '짜장면이나 무라'
+        # 34 첫 네글자가 '/한영 '일 때 
+        if text[0:4] == '/한영 ' :
+            # 35 요청에 대한 정보를 저장하라... 잘 몰라
+            headers = {
+                'X-Naver-Client-Id': NAVER_CLIENT_ID,
+                'X-Naver-Client-Secret': NAVER_CLIENT_SECRET, # 36 trailing comma 혹시라도 추가할 수 도 있으니까.
+            }
+
+            data = {
+                'source' : 'ko',
+                'target' : 'en',
+                'text' : text[4:] # 36 번역이후의 문자열을 대상으로 번역
+            }
+
+            papago_url = 'https://openapi.naver.com/v1/papago/n2mt'
+            papago_res = requests.post(papago_url, headers=headers, data=data) # 37 왜 post인지는 아직 모르겠다.
+            pprint.pprint(papago_res.json()) # 38 papago_res.json()은 딕셔너리 형식으로 받아오라는 뜻
+            text = papago_res.json().get('message').get('result').get('translatedText')
+        
+        #39 영한으로 번역하고 싶다면 
+        if text[0:4] == '/영한 ' :
+            headers = {
+                'X-Naver-Client-Id': NAVER_CLIENT_ID,
+                'X-Naver-Client-Secret': NAVER_CLIENT_SECRET, 
+            }
+
+            data = {
+                'source' : 'en',
+                'target' : 'ko',
+                'text' : text[4:] 
+            }
+
+            papago_url = 'https://openapi.naver.com/v1/papago/n2mt'
+            papago_res = requests.post(papago_url, headers=headers, data=data)
+            pprint.pprint(papago_res.json())
+            text = papago_res.json().get('message').get('result').get('translatedText')
+
+
         #######sendMessage################
         base_url = 'https://api.telegram.org'
         chat_id = config('CHAT_ID')
         api_url = f'{base_url}/bot{API_TOKEN}/sendMessage?chat_id={chat_id}&text={text}'  #3 이쪽으로 요청을 보내면 챗봇에 명령이 갑니다.
 
 
-        response = requests.get(api_url) # 33 
+        response = requests.get(api_url) # 33 리퀘스츠는 괄호의 url을 입력해주세요!
         
     #28 그리고 메시지를 보내면 메시지의 내용이 from_telegram에 저장된다.    
     return '', 200 #24 응답은 공백이고, 200이라는 값을 보내줄게

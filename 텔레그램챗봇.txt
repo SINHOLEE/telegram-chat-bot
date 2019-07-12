@@ -1,21 +1,21 @@
-telegram Ãªº¿ ¸¸µé±â
+telegram Ãªï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½
 
-1. teltegram.desktop¿¡¼­ ´Ù¿î·Îµå ¹Þ´Â´Ù.
-2. °¡ÀÔÇÑ´Ù.
-3. BotFather(Ã¼Å©)¸¦ Å¬¸¯ÇÏ¿© ½ÃÀÛ¹öÆ°À» ´©¸¥´Ù.
-4. BotFather¿¡¼­ Ãªº¿À» ¸¸µé ¼ö ÀÖ´Ù.
+1. teltegram.desktopï¿½ï¿½ï¿½ï¿½ ï¿½Ù¿ï¿½Îµï¿½ ï¿½Þ´Â´ï¿½.
+2. ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
+3. BotFather(Ã¼Å©)ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½Û¹ï¿½Æ°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
+4. BotFatherï¿½ï¿½ï¿½ï¿½ Ãªï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½.
 
-5. /newbotÀÌ¶ó°í BotFather¿¡ ÀÔ·ÂÇÏÀÚ
-5. ÀÀ´ä) BotFather, [12.07.19 10:23]
+5. /newbotï¿½Ì¶ï¿½ï¿½ BotFatherï¿½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½ï¿½
+5. ï¿½ï¿½ï¿½ï¿½) BotFather, [12.07.19 10:23]
 Alright, a new bot. How are we going to call it? Please choose a name for your bot.
 
-6. ÀÌ ½ÅÈ£, [12.07.19 10:24]
-sin_ho_bot ÀÌ¶ó°í ÀÔ·ÂÇß´Ù.
-6. ÀÀ´ä) BotFather, [12.07.19 10:24]
+6. ï¿½ï¿½ ï¿½ï¿½È£, [12.07.19 10:24]
+sin_ho_bot ï¿½Ì¶ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½ß´ï¿½.
+6. ï¿½ï¿½ï¿½ï¿½) BotFather, [12.07.19 10:24]
 Good. Now let's choose a username for your bot. It must end in `bot`. Like this, for example: TetrisBot or tetris_bot.
 
-7. Use this token to access the HTTP API: 		# ÀÌ API¸¦ ÅëÁ¦ÇÒ ¼ö ÀÖ´Â ÀÏÁ¾ÀÇ ºñ¹Ð¹øÈ£ / Àß °ü¸® ÇØ¾ßÇÑ´Ù.
-Áß¿ä! API ÅäÅ«
+7. Use this token to access the HTTP API: 		# ï¿½ï¿½ APIï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ð¹ï¿½È£ / ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ø¾ï¿½ï¿½Ñ´ï¿½.
+ï¿½ß¿ï¿½! API ï¿½ï¿½Å«
 882597047:AAEHMMIz7BvYG8g1KynRxtC_s3T3HkZEFR0
 
 8. Making requests
@@ -25,13 +25,13 @@ https://api.telegram.org/bot<token>/METHOD_NAME.
 
 Like this for example:
 
-<token> : ³» ÅäÅ«
-METHOD_NAME : ³»°¡ ¼³Á¤ÇÑ? ÇÒ? ¸í·ÉÀÇ ÀÌ¸§
+<token> : ï¿½ï¿½ ï¿½ï¿½Å«
+METHOD_NAME : ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½? ï¿½ï¿½? ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½
 
-9. ¸í·ÉÀ» »ý¼ºÇØº¸ÀÚ
+9. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Øºï¿½ï¿½ï¿½
 https://api.telegram.org/bot882597047:AAEHMMIz7BvYG8g1KynRxtC_s3T3HkZEFR0/getMe
 
-10. »õÅÇ¿¡ À§ ÁÖ¼Ò¸¦ º¹»ç ºÙ¿©³ÖÀ¸¸é jsonÇü½ÄÀÇ html Á¤º¸°¡ µé¾î¿Â´Ù.
+10. ï¿½ï¿½ï¿½Ç¿ï¿½ ï¿½ï¿½ ï¿½Ö¼Ò¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ù¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ jsonï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ html ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Â´ï¿½.
 {
   "ok": true,
   "result": {
@@ -42,12 +42,12 @@ https://api.telegram.org/bot882597047:AAEHMMIz7BvYG8g1KynRxtC_s3T3HkZEFR0/getMe
   }
 }
 
-11. ÅÚ·¹±×·¥¿¡ µé¾î°¡¼­ À¯Àú³×ÀÓÀ» °Ë»öÇØº¸ÀÚ. ÀÖ´Ù. ¸»°É¾îº¸ÀÚ. ¹¬¹¬ºÎ´ä.¤Ð
+11. ï¿½Ú·ï¿½ï¿½×·ï¿½ï¿½ï¿½ ï¿½ï¿½î°¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ë»ï¿½ï¿½Øºï¿½ï¿½ï¿½. ï¿½Ö´ï¿½. ï¿½ï¿½ï¿½É¾îº¸ï¿½ï¿½. ï¿½ï¿½ï¿½ï¿½ï¿½Î´ï¿½.ï¿½ï¿½
 
-12. ÀÌÁ¦ ³» º¿¿¡°Ô ´©°¡ ¸»°É¾ú´ÂÁö È®ÀÎÇØº¸ÀÚ
+12. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½É¾ï¿½ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ï¿½Øºï¿½ï¿½ï¿½
 getUpdates
-Use this method to receive incoming updates using long polling (wiki). ¸ðµç ¾÷µ¥ÀÌÆ®(¸Þ½ÃÁö)¸¦ ¹Þ´Â´Ù.
- An Array of Update objects is returned. ¾î·¹ÀÌ Çü½ÄÀ¸·Î
+Use this method to receive incoming updates using long polling (wiki). ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®(ï¿½Þ½ï¿½ï¿½ï¿½)ï¿½ï¿½ ï¿½Þ´Â´ï¿½.
+ An Array of Update objects is returned. ï¿½î·¹ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 13.
 https://api.telegram.org/bot882597047:AAEHMMIz7BvYG8g1KynRxtC_s3T3HkZEFR0/getUpdates
@@ -55,30 +55,52 @@ https://api.telegram.org/bot882597047:AAEHMMIz7BvYG8g1KynRxtC_s3T3HkZEFR0/getUpd
 14. 
 "chat": {
           "id": 816539893,
-          "first_name": "½ÅÈ£",
-          "last_name": "ÀÌ",
-³» º¿¿¡ ¸» °Ç»ç¶÷ÀÇ Ãª_¾ÆÀÌµð¸¦ ¾Ë ¼ö ÀÖ´Ù.
+          "first_name": "ï¿½ï¿½È£",
+          "last_name": "ï¿½ï¿½",
+ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ç»ï¿½ï¿½ï¿½ï¿½ Ãª_ï¿½ï¿½ï¿½Ìµï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½.
  
-15. API¿¡ Required ¿¡ yes°¡ Ã¼Å©µÇ¾îÀÖ´Â Á¤º¸´Â ²À ÀÔ·ÂÇØ¾ß ÇÑ´Ù.
+15. APIï¿½ï¿½ Required ï¿½ï¿½ yesï¿½ï¿½ Ã¼Å©ï¿½Ç¾ï¿½ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ø¾ï¿½ ï¿½Ñ´ï¿½.
 
-16. ¿¹½Ã
+16. ï¿½ï¿½ï¿½ï¿½
 https://api.telegram.org/bot882597047:AAEHMMIz7BvYG8g1KynRxtC_s3T3HkZEFR0/
-sendMessage?text=°Ë»ö¾î&chat_id=816539893
-·Î ¸í·ÉÇÏ¸é ¹Ì¸® ÀúÀåÇØ³í ³»¿ëÀ» °Ë»ö¾î¾î¿Í ¸ÅÄªµÈ´Ù¸é Ãª¾ÆÀÌµð¿¡°Ô ¸Þ½ÃÁö¸¦ º¸³¾ ¼ö ÀÖ´Ù.
+sendMessage?text=ï¿½Ë»ï¿½ï¿½ï¿½&chat_id=816539893
+ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½ ï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø³ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Äªï¿½È´Ù¸ï¿½ Ãªï¿½ï¿½ï¿½Ìµð¿¡°ï¿½ ï¿½Þ½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½.
 
 
-telegram app.py¿¡ #25 ÀÌÈÄ ¿¬°á
+telegram app.pyï¿½ï¿½ #25 ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
 17.
 
 https://api.telegram.org/bot882597047:AAEHMMIz7BvYG8g1KynRxtC_s3T3HkZEFR0
-¿©±â¿¡¼­ webhook¼¼ÆÃÀ» ÇÏÀÚ
+ï¿½ï¿½ï¿½â¿¡ï¿½ï¿½ webhookï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
 https://api.telegram.org/bot882597047:AAEHMMIz7BvYG8g1KynRxtC_s3T3HkZEFR0/setWebhook?url=https://63204db7.ngrok.io/882597047:AAEHMMIz7BvYG8g1KynRxtC_s3T3HkZEFR0
-ÁÖ¼Ò´Â #16~17ÇØ¼­ ¹ÞÀº °ª
+ï¿½Ö¼Ò´ï¿½ #16~17ï¿½Ø¼ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
 
 https://api.telegram.org/bot882597047:AAEHMMIz7BvYG8g1KynRxtC_s3T3HkZEFR0/
-setWebhook -> API ÀÌ¸§
+setWebhook -> API ï¿½Ì¸ï¿½
 ?
-url=https://63204db7.ngrok.io/ -> #16~17ÇØ¼­ ¹ÞÀº °ª
-882597047:AAEHMMIz7BvYG8g1KynRxtC_s3T3HkZEFR0 -> ³» ÅäÅ«
+url=https://63204db7.ngrok.io/ -> #16~17ï¿½Ø¼ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
+882597047:AAEHMMIz7BvYG8g1KynRxtC_s3T3HkZEFR0 -> ï¿½ï¿½ ï¿½ï¿½Å«
+
+18. ngrokï¿½Ì³ï¿½ run ï¿½ï¿½ï¿½ï¿½ ï¿½Ï³ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ú·ï¿½ï¿½×·ï¿½ Ãªï¿½ï¿½ï¿½ï¿½ ï¿½Ûµï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+python anywhere
+ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø¼ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
+
+3ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´Â°ï¿½ ï¿½ï¿½ï¿½ï¿½.
+
+19. ï¿½ì¸®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ app.pyï¿½ï¿½ ï¿½Ù²Ù°ï¿½ ï¿½Í¾ï¿½
+ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ü¿ï¿½ Filesï¿½ï¿½ Å¬ï¿½ï¿½
+
+20. ï¿½ì¸®ï¿½ï¿½ app.pyï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ø¼ï¿½ ï¿½Ù¿ï¿½ï¿½Ö´Â´ï¿½.
+
+21. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ pipï¿½Î½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù½ï¿½ ï¿½Þ¾Æ¾ï¿½ï¿½Ñ´ï¿½.
+
+python -V ï¿½ï¿½ï¿½ï¿½
+Python 2.7.12
+
+07:26 ~ $ python3 -V
+Python 3.7.0
+ï¿½Ì·ï¿½ï¿½ï¿½ ï¿½Ø¾ï¿½ï¿½Ñ´ï¿½.
+
+07:26 ~ $ pip3 install python-decouple --user
